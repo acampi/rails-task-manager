@@ -5,7 +5,7 @@
 <ul>
   <% @tasks.each do |task| %>
   <li><%= task.title %> | <%= link_to "See details", task_path(task[:id]) %> |
-    <%= link_to "Delete", task_path(task),
+    <%= link_to "Delete 💩", task_path(task),
       method: :delete,
       data: { confirm: "Are you sure?" } %>
   </li>
@@ -13,6 +13,6 @@
 </ul>
 
 
-<%= link_to "Add a new task", new_task_path  %>
+<%= link_to "➕Add a new task", new_task_path  %>
 
 
